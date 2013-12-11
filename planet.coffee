@@ -28,6 +28,9 @@ class Vector
 
 subtract = (vector1, vector2) ->
 	new Vector vector1.x - vector2.x, vector1.y - vector2.y
+randomVector = ->
+	dist = canvas.height / 4
+	new Vector random(-dist, dist), random(-dist, dist)
 
 class GameObject
 	constructor: ->
@@ -37,11 +40,8 @@ class GameObject
 	show: ->
 
 class Planet extends GameObject
-	constructor: ->
+	constructor: (@loc) ->
 		super
-
-		border = canvas.height / 4
-		@loc = new Vector random(border, canvas.width - border), random(border, canvas.height - border)
 
 		#@vel = new Vector random(-1, 1), random(-1, 1)
 		@vel = new Vector 0, 0
@@ -59,7 +59,7 @@ class Planet extends GameObject
 			#console.log dist
 
 			if dist != 0 and not isNaN(dist)
-				force = gravitationalConstant * @mass * planet.mass / Math.pow(dist, 2)
+				force = gravitationalConstant * @mass * planet.mass / Math.pow(dist, root.power)
 				direction = subtract(planet.loc, @loc)
 				accelerationAmount = force / @mass
 
@@ -68,7 +68,9 @@ class Planet extends GameObject
 
 				@vel.add(direction.scaleTo(accelerationAmount))
 
-		@loc.add(@vel)
+		@vel.mult 1 - root.drag
+		#@loc.mult .99 #this is the sketchy factor that keeps the planets centered
+		@loc.add @vel
 
 	show: ->
 		super

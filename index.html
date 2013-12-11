@@ -47,8 +47,46 @@
 
 	</head>
 
-	<body background="background.jpg">
+	<body>
 		<canvas id="myCanvas" oncontextmenu="return true;"></canvas>
+
+		<div class="allTheButtons">
+            <div class="controlGroup" style="right: 0px;">
+                    <h1 id="speedOptionsMinButton" title="These options allow you to change the speed of Game of Life. Click here to minimize these options" type="button" class="minButton">Speed Options<img src="up-down-arrow.png" height="13" width="13" style="border-top-width:50;"></h1>
+                    <div id="speedOptionsDiv" class="buttonGroup" style="bottom:0px;">
+                            <div id="slow" title="Makes the animation run slowly by adding a 1.0 second delay between each generation"
+                            type="button" class="radio">Slow</div>
+                            <div id="medium" title="Makes the animation run slightly slower by adding a 0.1 second delay between each generation"
+                            type="button" class="radio">Medium</div>
+                            <div id="fast" title ="Makes the animation run as fast as possible"
+                            type="button"class="radio">Fast</div>
+                    </div>
+            </div>
+
+            <div class="controlGroup" style="right: 125px;">
+                    <h1 id="speedOptionsMinButton" title="These options allow you to change the speed of Game of Life. Click here to minimize these options" type="button" class="minButton">Drag Options<img src="up-down-arrow.png" height="13" width="13" style="border-top-width:50;"></h1>
+                    <div id="speedOptionsDiv" class="buttonGroup" style="bottom:0px;">
+                            <div id="noDrag" title="Makes the animation run slowly by adding a 1.0 second delay between each generation"
+                            type="button" class="radio">No Drag</div>
+                            <div id="lowDrag" title="Makes the animation run slightly slower by adding a 0.1 second delay between each generation"
+                            type="button" class="radio">Low Drag</div>
+                            <div id="highDrag" title ="Makes the animation run as fast as possible"
+                            type="button"class="radio">High Drag</div>
+                    </div>
+            </div>
+
+            <div class="controlGroup" style="right: 250px;">
+                    <h1 id="speedOptionsMinButton" title="These options allow you to change the speed of Game of Life. Click here to minimize these options" type="button" class="minButton">Power Options<img src="up-down-arrow.png" height="13" width="13" style="border-top-width:50;"></h1>
+                    <div id="speedOptionsDiv" class="buttonGroup" style="bottom:0px;">
+                            <div id="power1" title="Makes the animation run slowly by adding a 1.0 second delay between each generation"
+                            type="button" class="radio">1/r</div>
+                            <div id="power2" title="Makes the animation run slightly slower by adding a 0.1 second delay between each generation"
+                            type="button" class="radio">1/(r ^ 2)</div>
+                            <div id="power3" title ="Makes the animation run as fast as possible"
+                            type="button"class="radio">1/(r ^ 3)</div>
+                    </div>
+            </div>
+        </div>
 
 		<script type="text/javascript" src="gravitySimulator.js"></script>
 	</body>

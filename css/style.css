@@ -1,3 +1,45 @@
+.radio {
+  width: 120px;
+  background-color: rgba(10, 40, 200, 0.8);
+  color: #ffffff;
+  border: 0;
+  margin-bottom: 0px;
+  transition: color .2s;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 30px;
+  text-decoration: none;
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.radio:hover {
+  background-color: rgba(66, 95, 246, 0.8);
+  color: #fff078;
+}
+.radio:active {
+  background-color: rgba(115, 136, 248, 0.8);
+  color: #ffc864;
+}
+.radio.down {
+  color: #ffff00;
+  background-color: rgba(164, 177, 250, 0.8);
+}
+.text {
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 30px;
+  text-decoration: none;
+  text-align: center;
+}
 html,
 body,
 canvas {
@@ -8,3 +50,246 @@ canvas {
   display: block;
 }
 /* just to be sure these are full screen*/
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+h1 {
+  width: 120px;
+  background-color: rgba(10, 40, 200, 0.8);
+  color: #ffffff;
+  border: 0;
+  margin-bottom: 0px;
+  transition: color .2s;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 30px;
+  text-decoration: none;
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+h1:hover {
+  background-color: rgba(66, 95, 246, 0.8);
+  color: #fff078;
+}
+h1:active {
+  background-color: rgba(115, 136, 248, 0.8);
+  color: #ffc864;
+}
+h1.down {
+  color: #ffff00;
+  background-color: rgba(164, 177, 250, 0.8);
+}
+div {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.actionButton {
+  width: 120px;
+  background-color: rgba(10, 40, 200, 0.8);
+  color: #ffffff;
+  border: 0;
+  margin-bottom: 0px;
+  transition: color .2s;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 30px;
+  text-decoration: none;
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.actionButton:hover {
+  background-color: rgba(66, 95, 246, 0.8);
+  color: #fff078;
+}
+.actionButton:active {
+  background-color: rgba(115, 136, 248, 0.8);
+  color: #ffc864;
+}
+.actionButton.down {
+  color: #ffff00;
+  background-color: rgba(164, 177, 250, 0.8);
+}
+.neighborhoodButton {
+  width: 120px;
+  background-color: rgba(10, 40, 200, 0.8);
+  color: #ffffff;
+  border: 0;
+  margin-bottom: 0px;
+  transition: color .2s;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 30px;
+  text-decoration: none;
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+}
+.neighborhoodButton:hover {
+  background-color: rgba(66, 95, 246, 0.8);
+  color: #fff078;
+}
+.neighborhoodButton:active {
+  background-color: rgba(115, 136, 248, 0.8);
+  color: #ffc864;
+}
+.neighborhoodButton.down {
+  color: #ffff00;
+  background-color: rgba(164, 177, 250, 0.8);
+}
+.helpBox {
+  position: absolute;
+  visibility: hidden;
+  background-color: rgba(10, 40, 200, 0.8);
+  color: #ffffff;
+  border: 0;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 30px;
+  text-decoration: none;
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.rules {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+.rules .ruleTable {
+  background: #000000;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 30px;
+  text-decoration: none;
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.rules .ruleTable .tableHeader {
+  color: #ffffff;
+  background-color: rgba(10, 40, 200, 0.8);
+}
+.rules .ruleTable .ruleButton {
+  width: 120px;
+  background-color: rgba(10, 40, 200, 0.8);
+  color: #ffffff;
+  border: 0;
+  margin-bottom: 0px;
+  transition: color .2s;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 30px;
+  text-decoration: none;
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+}
+.rules .ruleTable .ruleButton:hover {
+  background-color: rgba(66, 95, 246, 0.8);
+  color: #fff078;
+}
+.rules .ruleTable .ruleButton:active {
+  background-color: rgba(115, 136, 248, 0.8);
+  color: #ffc864;
+}
+.rules .ruleTable .ruleButton.down {
+  color: #ffff00;
+  background-color: rgba(164, 177, 250, 0.8);
+}
+.allTheButtons {
+  position: absolute;
+  right: 250px;
+  bottom: 0px;
+  text-align: bottom;
+  vertical-align: text-bottom;
+}
+.allTheButtons .controlGroup {
+  margin: 5px;
+  margin-bottom: 0px;
+  position: absolute;
+  bottom: 0;
+}
+.allTheButtons .controlGroup .minButton {
+  width: 120px;
+  background-color: rgba(10, 40, 200, 0.8);
+  color: #ffffff;
+  border: 0;
+  margin-bottom: 0px;
+  transition: color .2s;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 30px;
+  text-decoration: none;
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 3px;
+}
+.allTheButtons .controlGroup .minButton:hover {
+  background-color: rgba(66, 95, 246, 0.8);
+  color: #fff078;
+}
+.allTheButtons .controlGroup .minButton:active {
+  background-color: rgba(115, 136, 248, 0.8);
+  color: #ffc864;
+}
+.allTheButtons .controlGroup .minButton.down {
+  color: #ffff00;
+  background-color: rgba(164, 177, 250, 0.8);
+}

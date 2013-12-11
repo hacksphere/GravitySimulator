@@ -1,3 +1,31 @@
+//Regular buttons
+@button: rgba(10, 40, 200, .8);
+@buttonHover: lighten(@button, 20%);
+@buttonActive: lighten(@button, 30%);
+@buttonDown: lighten(@button, 40%);
+
+@buttonTextColor:		rgb(255, 255, 255);
+@buttonHoverTextColor:	rgb(255, 240, 120);
+@buttonActiveTextColor:	rgb(255, 200, 100);
+@buttonDownTextColor:	rgb(255, 255, 0);
+
+.toggle {
+}
+
+.radio {
+	.actionButton;
+}
+
+.text {	
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	font-style:normal;
+	line-height:30px;
+	text-decoration:none;
+	text-align:center;
+}
+
 html, body, canvas {
 	width:100%;
 	height:100%;
@@ -5,3 +33,117 @@ html, body, canvas {
 	padding:0;
 	display:block;
 } /* just to be sure these are full screen*/
+
+.unselectable {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+h1 {
+	.actionButton;
+}
+
+div {
+	.unselectable;
+}
+
+.actionButton {
+	width:120px;
+
+	background-color: @button;
+	color: @buttonTextColor;
+
+	border: 0;
+	margin-bottom: 0px;
+
+	transition: color .2s;
+
+	.text;
+	.unselectable;
+
+	&:hover {
+		background-color: @buttonHover;
+		color: @buttonHoverTextColor;
+	}
+	&:active {
+		background-color: @buttonActive;
+		color: @buttonActiveTextColor;
+	}
+	&.down {
+		color:@buttonDownTextColor;
+		background-color: @buttonDown;
+	}
+}
+
+.neighborhoodButton {
+	.actionButton;
+	width:	20px;
+	height:	20px;
+}
+
+.helpBox {
+	position:absolute;
+	visibility:hidden;
+	
+	background-color: @button;
+	color: @buttonTextColor;
+
+	border: 0;
+
+	.text;
+	.unselectable;
+}
+
+.rules {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+
+	.ruleTable {
+		background: rgba(0, 0, 0, 1);
+
+		.text;
+		.unselectable;
+		
+		.tableHeader {
+			color: rgb(255, 255, 255);
+
+			background-color: @button;
+		}
+	
+		.ruleButton {
+			.actionButton;
+
+			width: 20px;
+		}
+	}
+}
+
+.allTheButtons {
+	position: absolute;
+	right: 250px;
+	bottom: 0px;
+	text-align: bottom;
+	vertical-align: text-bottom;
+
+	.controlGroup {
+		margin: 5px;
+		margin-bottom: 0px;
+
+		position: absolute;
+		bottom: 0;
+
+		.buttonGroup {
+		}
+		.minButton {
+			color: @buttonTextColor;
+
+			.actionButton;
+			margin-bottom: 3px;
+		}
+	}
+}
